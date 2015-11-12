@@ -6,7 +6,7 @@ The Asset Master package provides an optimization option for bundling assets wit
 
 ## Current C5 Asset Caching
 
-The way that the current caching is set up, is that all assets which can be combined are combined on a page by page basis. Take a look at the following table. With the current implementation, since each of these has unique combination of scripts, each would be compiled into a unqie bundle and downloaded.
+The way that the current caching is set up, is that all assets which can be combined are combined on a page by page basis. Take a look at the following table. With the current implementation, since each of these pages have a unique combination of scripts, each would be compiled into a unique bundle and downloaded.
 
 | Page One      | Page Two      | Page Three    | Page Four    | Total Pages  |
 |---------------|---------------|---------------|--------------|--------------|
@@ -19,7 +19,7 @@ The way that the current caching is set up, is that all assets which can be comb
 |               | pagelist.js   |               |              | 25%          |  
 |               |               | form.js       |              | 25%          | 
 |               |               |               | lightbox.js  | 25%          |
-| bundle1.js    | bundle2.js    | bundle3.js    | bundle4.js   |              |
+| bundle1.js    | bundle2.js    | bundle3.js    | bundle4.js   | 25%          |
 
 ## Asset Master Asset Caching
 
@@ -39,7 +39,7 @@ They would be included as a single download, which can be cached in your users b
 |               | pagelist.js   |               |              | 25%          |  
 |               |               | form.js       |              | 25%          | 
 |               |               |               | lightbox.js  | 25%          |
-| bundle1.js    | bundle2.js    | bundle3.js    | bundle4.js   |              |
+| bundle1.js    | bundle2.js    | bundle3.js    | bundle4.js   | 25%          |
 
 ## Implementation
 
