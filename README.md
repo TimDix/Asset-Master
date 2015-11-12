@@ -82,7 +82,7 @@ They would be included as a single download, which can be cached in your users b
 ```
 
 ### PageTheme's footer_bottom.php
-There's currently no effective hooks in C5, so you'll need to add the following to your theme's footer_bottom (right near footer_required is appropiate)
+There's currently no effective hooks in C5 after rendering, and before post processing, so you'll need to add the following to your theme's footer_bottom (right near footer_required is appropiate)
 ```php
 <?php $theme->assetBundler->bundle(); ?>
 ```
