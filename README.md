@@ -86,3 +86,12 @@ There's currently no effective hooks in C5, so you'll need to add the following 
 ```php
 <?php $theme->assetBundler->bundle(); ?>
 ```
+
+### Example output
+```html
+<!-- Asset Master Bundle -->
+<script type="text/javascript" src="/application/files/cache/js/67e0367588a828476980f2af413124fb4c9a85dd.js" data-source="/concrete/js/jquery.js /packages/your_package/themes/your_theme/js/global/settings.js /packages/your_package/themes/your_theme/js/global/utilities.js /packages/your_package/themes/your_theme/js/libraries/collapse.js /packages/your_package/themes/your_theme/js/page/home.js /packages/your_package/themes/your_theme/js/main.js"></script>
+
+<!-- Concrete5 controlled bundle -->
+<script type="text/javascript" src="/application/files/cache/js/f670ea5e09ee15eee8e58b769dbb4cbeb8fb621f.js" data-source="/concrete/blocks/autonav/templates/responsive_header_navigation/view.js /concrete/js/responsive-slides.js"></script>
+```
