@@ -51,7 +51,7 @@ class Bundler {
 			//Populate bundledAssets with asset objects from handles, and mark as included
 			$bundledAssets = array();
 	        foreach($this->responseAssetGroup->getRequiredAssetsToOutput() as $asset) {
-	        	if( array_search($asset->getAssetHandle(), $this->assets[$asset->getAssetType()]) !== false) {
+	        	if( is_array($this->assets[$asset->getAssetType()]) &&  array_search($asset->getAssetHandle(), $this->assets[$asset->getAssetType()]) !== false) {
 	        		$bundledAssets[$asset->getAssetType()][] = $asset;
 	        		$this->responseAssetGroup->markAssetAsIncluded($asset->getAssetType(), $asset->getAssetHandle());
 	        	}
